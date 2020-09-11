@@ -1,0 +1,18 @@
+%h2 Analytics
+
+.stats
+  - @stats.each do |link, views|
+    .stat-block
+      %p.url
+        = link.url
+      %p.short
+        = link.short
+      %br
+      %p.clicks
+        Total clicks:
+        = views.count
+      %p.countries
+        Top countries:
+        = get_top_countries(views.pluck(:country))    
+            
+

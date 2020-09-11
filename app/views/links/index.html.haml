@@ -1,0 +1,16 @@
+%div
+  %h2 Welcome to ShortURL.com
+  %p Simplified solution to shorten your lengthy URLs
+  %br
+  %br
+  
+  .form-block
+    = form_with(model: @link) do |f|
+      .field-block
+        %label Please enter your URL here
+        %p
+          = f.text_field :url, placeholder: 'Enter your Url', required: true
+          = f.submit "SHORTEN", class: 'btn'
+  %br
+  .short-block        
+      

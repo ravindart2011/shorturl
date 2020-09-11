@@ -1,0 +1,54 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+ .err {
+  font-size: 15px;
+  color: red;
+}
+ 
+ .field-block input#link_url {
+    width: 500px;
+    padding: 8px;
+ }
+.field-block .btn {
+    padding: 8px;
+    width: 100px;
+    box-shadow: 3px 4px 3px #000;
+ }
+ 
+ .short-block p.link {
+   font-size: 18px;
+   font-weight: bold;
+ }
+ 
+.stats .stat-block {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+ }
+ .stats .stat-block .url {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom:0px;
+ }
+.stats .stat-block .short {
+  margin: 4px;
+  font-size: 17px;
+  font-style: italic;
+}
+.stats .stat-block .clicks, .stats .stat-block .countries {
+  margin: 0px;
+}

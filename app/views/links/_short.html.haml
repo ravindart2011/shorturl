@@ -1,0 +1,12 @@
+Here's your short URL:
+- if @link.errors.any?
+  %p.err
+    = @link.errors.full_messages.first 
+- else    
+  %p.link#link1
+    = @link.short
+    
+    .right-links
+      %button.clipboard-btn{"data-clipboard-action" => "copy", "data-clipboard-target" => "#link1"} Copy to clipboard
+      &nbsp;|&nbsp;
+      = link_to "Open in Browser", @link.short, target: '_blank', class: 'btn'
